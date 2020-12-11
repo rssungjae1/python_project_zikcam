@@ -1,0 +1,9 @@
+version: '1.0'
+services:
+  main:
+    build: ./main
+    # 연결할 외부 디렉토리 : 컨테이너 내 디렉토리
+    volumes:
+      - ./main:/usr/src/app
+    ports:
+      - "5000:5000"
