@@ -82,9 +82,6 @@ def zikcam(video_path):
 
     while True:
         ret,img = cap.read()
-        print(cap.get(cv2.CAP_PROP_POS_FRAMES))
-        
-        print(float(end_frame_entry.get()))
         if float(end_frame_entry.get()) == cap.get(cv2.CAP_PROP_POS_FRAMES):
             exit()
         if not ret:
